@@ -50,7 +50,7 @@ void primes(int lpipe[2]) {
 
 int lpipe_first_data(int lpipe[2], int *dst) {
     if ( read(lpipe[RD], dst, INT_LEN) == INT_LEN ) {
-        printf("primes %d\n", *dst);
+        printf("prime %d\n", *dst);
         return 0;
     }
     return -1;
